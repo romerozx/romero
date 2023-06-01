@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página web responsive</title>
+  <style>
+    /* Estilos para el contenido de la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para el menú */
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .menu li {
+      float: left;
+    }
+
+    .menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .menu li a:hover {
+      background-color: #111;
+    }
+
+    /* Estilos para la sección principal */
+    .main {
+      margin-top: 20px;
+    }
+
+    /* Media queries para hacer la página responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .menu li {
+        float: none;
+        display: inline-block;
+      }
+
+      .menu li a {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mi página web responsive</h1>
+
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#acerca">Acerca</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="main">
+      <h2 id="inicio">Bienvenido a mi página web</h2>
+      <p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/1200px-Nietzsche187a.jpg" width="50px" alt="100px">
+      </p>
+
+      <h2 id="acerca">Acerca de</h2>
+      <p>Información sobre la página...</p>
+
+      <h2 id="servicios">Servicios</h2>
+      <p>Descripción de los servicios ofrecidos...</p>
+
+      <h2 id="contacto">Contacto</h2>
+      <p>Información de contacto...</p>
+    </div>
+  </div>
+</body>
